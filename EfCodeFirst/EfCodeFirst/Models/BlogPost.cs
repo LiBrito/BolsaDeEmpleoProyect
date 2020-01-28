@@ -11,11 +11,15 @@ namespace EfCodeFirst.Models
         public int Id { get; set; }
         [Required]
         [StringLength(200)]
-        public String Titulo { get; set; }
+        public String Vacante { get; set; }
         [Required]
-        public String Contenido { get; set; }
+        public String Descripcion { get; set; }
+        [Required]
         [StringLength(100)]
-        public String Autor { get; set; }
+        public String Empresa { get; set; }
+        [Required]
+        [StringLength(60)]
+        public String Categoria { get; set; }
         public DateTime Publicacion { get; set; }
         public List<Comentarios> Comentarios { get; set; }
 

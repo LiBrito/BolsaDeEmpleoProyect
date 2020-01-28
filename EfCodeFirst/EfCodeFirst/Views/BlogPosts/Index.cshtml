@@ -194,13 +194,16 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.Titulo)
+            @Html.DisplayNameFor(model => model.Vacante)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Contenido)
+            @Html.DisplayNameFor(model => model.Descripcion)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Autor)
+            @Html.DisplayNameFor(model => model.Empresa)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Categoria)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Publicacion)
@@ -211,13 +214,16 @@
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.Titulo)
+            @Html.DisplayFor(modelItem => item.Vacante)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Contenido)
+            @Html.DisplayFor(modelItem => item.Descripcion)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Autor)
+            @Html.DisplayFor(modelItem => item.Empresa)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Categoria)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Publicacion)
